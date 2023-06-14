@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'base';
+    src: url('./font/LeferiBaseRegular.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'base';
+    src: url('./font/LeferiBaseBold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'point';
+    src: url('./font/LeferiPointWhite.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'point';
+    src: url('./font/LeferiPointSpecial.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'point';
+    src: url('./font/LeferiPointBlack.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'pointobliquue';
+    src: url('./font/LeferiPointWhiteOblique.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'pointobliquue';
+    src: url('./font/LeferiPointSpecialItalic.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'pointobliquue';
+    src: url('./font/LeferiPointBlackOblique.ttf');
+    font-weight: 700;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    color: #fff;
+    font-family: 'base';
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 8px 0;
+    border-top: 1px solid #fff;
+
+}
+
+.header .title {
+    font-size: 24px;
+    font-family: 'pointobliquue';
+    font-weight: 300;
+}
+
+.promotion {
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promotion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.promotion .maintext {
+    width: 90%;
+    text-align: left;
+    color: #fff;
+    font-family: 'point';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 40px;
+    z-index: 100;
+}
+
+.promotion video {
+    height: 540px;
+    object-fit: cover;
+}
+
+.section-title {
+    padding: 16px 20px 24px 20px;
+    border-top: 1px solid #4d4d4d;
+    border-bottom: 1px solid #4d4d4d;
+    font-family: 'point';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.big {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    font-family: 'point';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.section img,
+.section video {
+    width: 100%;
+}
+
+.section h3 {
+    margin: 8px 0 20px 0;
+}
+
+.section p {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: grid;
+    grid-column: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+    width: 100%;
+}
+
+.team .member img {
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+    width: 100%;
+}
+
+.gallery .item {
+    width: 100%;
+    height: 300px;
+    background: #333;
+}
