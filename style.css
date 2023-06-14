@@ -221,3 +221,27 @@ body {
     object-fit: fill;
     transform: translate(-50%, -50%);
 }
+
+#popup .control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    background: rgba(0, 0, 0, 0.3);
+    transform: translate(0, -50%);
+    text-align: center;
+    z-index: 1001;
+}
+
+#popup .left {
+    left: 0;
+}
+
+#popup .right {
+    right: 0;
+    transform: translate(0, -50%) rotate(180deg);
+}
